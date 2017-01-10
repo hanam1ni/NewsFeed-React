@@ -1,0 +1,290 @@
+html,body{
+	margin: 0;
+	
+}
+
+@font-face {
+	font-family: "Homestead-Display";
+	src: url("../static/Homestead-Display.ttf");
+}
+
+@font-face {
+	font-family: "Homestead-Regular";
+	src: url("../static/Homestead-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Sintony-Regular";
+	src: url("../static/Sintony-Regular.otf");
+}
+
+@font-face {
+	font-family: "Sintony-Bold";
+	src: url("../static/Sintony-Bold.otf");
+}
+
+
+.container-fluid {
+    padding: 0px;
+}
+
+.Navbar{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	font-family: "Sintony-Bold";
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	overflow: auto;
+	z-index: 6;
+	padding:0 40px;
+}
+
+li{
+	display: inline;
+}
+
+.Navbar-Name{
+	float: left;
+	font-size: 24px;
+	padding-left: 15px;
+	margin: 5px 0;
+}	
+
+
+.Heading-Container{
+	width: 100%;
+	height: 720px;
+	display: table;
+	position : relative;
+	align-items: center;
+}
+
+.Heading-BG{
+	position: absolute;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+	background-image: url("../static/header.jpg");
+	background-size: cover;
+}
+
+.Heading-Head{
+	width: 100%;
+	text-align: center;
+	font-family: "Homestead-Display";
+	font-size: 150px;
+	color: #cebb86;
+	padding-top: 170px;
+}
+
+.Heading-SubHead{
+	width: 100%;
+	text-align: center;
+	font-family: "Homestead-Regular";
+	font-size: 60px;
+	color: grey;
+	padding-top: 10px;
+}
+
+.NewsFeed-Container{
+	width: 100%;
+	height: 1150px;
+	color: black;
+}
+
+.NewsFeed-Heading{
+	width: 100%;
+	height: 250px;
+	background-color: #3c3c3c;
+	text-align: center;
+	font-family: "Homestead-Display";
+	font-size: 100px;
+	color: white;
+	padding-top: 40px;
+
+}
+
+.NewsFeed-Content{
+	width: 100%;
+	height: 900px;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	box-shadow: inset 0 0 20px 10px rgba(0,0,0,0.6);
+
+}
+
+.NewsFeed-BG{
+	width: 100%;
+	height: 150%;
+	background-image: url("../static/newsfeed.jpg");
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+}
+
+#newsFade{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	pointer-events: none;
+	position: absolute;
+	z-index: 7;
+	opacity: 0;
+}
+
+
+.NewsFeed-Item{
+	width: 30%;
+	height: 230px;
+	font-family: "Sintony-Regular";
+	color: white;
+	border-radius: 5px;
+	margin: 30px 30px;
+	display: table;
+	position: relative;
+	float: left;
+	transition-duration: 0.5s;
+}
+
+.NewsFeed-Item:hover{
+	box-shadow: 1px 9px 55px 2px rgba(255,255,255,1);
+}
+
+.NewsFeed-Url{
+	width: 80%;
+	height: 100%;
+}
+
+ul{
+	padding: 0;
+}
+
+.NewsItem-Url > img{
+	width: 100%;
+	height: 230px;
+	border-radius: 3px;
+}
+
+.NewsItem-Topic{
+	width: 100%;
+	height: 60px;
+	text-align: right;
+	font-size: 20px;
+	padding-right: 10px;
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 5;
+	top: 170px;
+}
+
+.NewsFocus-Container{
+	width: 100%;
+	height: 900px;
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.NewsFocus-Content{
+	padding: 50px;
+}
+
+.NewsFocus-Topic{
+	font-family: "Sintony-Bold";
+	font-size: 40px;
+	color: #cebb86;
+}
+
+.NewsFocus-Detail{
+	font-family: "Sintony-Regular";
+	font-size: 22px;
+	color: white;
+}
+
+.NewsFocus-Detail >img{
+	display: block;
+   	margin: 5px auto;
+	border-radius: 5px;
+}
+
+.NewsFocus-Detail >h1{
+	font-size: 32px;
+	font-weight: 600;
+	color: #cebb86;
+}
+
+.BackBtn{
+	position: absolute;
+	top: 40px;
+	right: 20px;
+}
+
+.NewsFocus-BackBtn{
+	border-color: white;
+	border: 1px;
+	background-color: rgba(0,0,0,0);
+	font-family: "Homestead-Display";
+	font-size: 60px;
+	color: #cc2e2e;
+
+}
+
+.Subscribe-Container{
+	width: 100%;
+	height: 300px;
+	background-color: #3c3c3c;
+	color: white;
+	padding: 60px;
+}
+
+.Subscribe-Container>h1{
+	text-align: center;
+	font-family: "Homestead-Display";
+	font-size: 100px;
+	color: white;
+}
+
+.Form-Container{
+	width: 100%;
+	text-align: center;
+}
+
+.Form-Container>input{
+	height: 40px;
+	width: 20%;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	border-radius: 5px;
+	border: 0;
+	margin:0 10px;
+	padding: 10px;
+}
+
+.Form-Container>button{
+	height: 39px;
+	width: 7%;
+	border-radius: 5px;
+	border: 0;
+	padding: 10px;
+	font-weight: 600;
+	color: white;
+	background-color: #e7577a;
+	box-shadow: 0 4px #af405b;
+	transition-duration: 0.4s;
+}
+
+.Form-Container>button:hover{
+	background-color: #fd7596;
+	box-shadow: 0 4px #af405b;
+}
+
+.Form-Container>button:active{
+	background-color: #b13a57;
+	box-shadow: 0 4px #af405b;
+}
+
+.Form-Container>button:focus {
+	outline:0;
+}
+
